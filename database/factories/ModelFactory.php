@@ -28,6 +28,9 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'state' => $faker->stateAbbr,
         'postalCode' => $faker->postcode,
         'phone' => $faker->phoneNumber,
+        'newsletterOptIn' => $value = (bool)random_int(0,1),
+        'avatar' => 'https://www.placecage.com/200/300',
+        'nickname' => $faker->company,
         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         'is_admin' => $value = (bool)random_int(0,1)

@@ -25,6 +25,9 @@ class CreateUsersTable extends Migration
             $table->string('state')->nullable();
             $table->string('postalCode')->nullable();
             $table->string('phone')->nullable();
+            $table->boolean('newsletterOptIn')->nullable();
+            $table->string('avatar')->nullable();
+            $table->string('nickname')->nullable();
             $table->timestamps();
             $table->boolean('is_admin')->nullable();
         });

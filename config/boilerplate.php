@@ -13,7 +13,7 @@ return [
     |
     */
     'signup_fields' => [
-        'email', 'password', 'is_admin', 'title', 'firstName', 'lastName', 'suffix', 'streetAddress', 'city', 'state', 'postalCode', 'phone'
+        'email', 'password', 'is_admin', 'title', 'firstName', 'lastName', 'suffix', 'streetAddress', 'city', 'state', 'postalCode', 'phone', 'avatar', 'nickname', 'newsletterOptIn'
     ],
 
     /*
@@ -27,7 +27,7 @@ return [
     */
     'signup_fields_rules' => [
     	'email' => 'required|email|unique:users',
-    	'password' => 'required|min:14',
+    	'password' => 'required|min:12',
       'is_admin' => 'required|boolean'
     ],
 
