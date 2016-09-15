@@ -17,9 +17,17 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
-        'name' => $faker->name,
         'email' => $faker->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
+        'title' => $faker->title($gender = null|'male'|'female'),
+        'firstName' => $faker->firstName($gender = null|'male'|'female'),
+        'lastName' => $faker->lastName,
+        'suffix' => $faker->suffix,
+        'streetAddress' => $faker->streetAddress,
+        'city' => $faker->city,
+        'state' => $faker->stateAbbr,
+        'postalcode' => $faker->postcode,
+        'phone' => $faker->phoneNumber,
         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         'is_admin' => $value = (bool)random_int(0,1)
