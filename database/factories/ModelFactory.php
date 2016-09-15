@@ -18,7 +18,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
     return [
         'email' => $faker->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: $password = bcrypt('secretsquirrel'),
         'title' => $faker->title($gender = null|'male'|'female'),
         'firstName' => $faker->firstName($gender = null|'male'|'female'),
         'lastName' => $faker->lastName,
@@ -26,7 +26,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'streetAddress' => $faker->streetAddress,
         'city' => $faker->city,
         'state' => $faker->stateAbbr,
-        'postalcode' => $faker->postcode,
+        'postalCode' => $faker->postcode,
         'phone' => $faker->phoneNumber,
         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
