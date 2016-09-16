@@ -7,11 +7,13 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-	    "tymon/jwt-auth": "0.5.*",
+	      "tymon/jwt-auth": "0.5.*",
         "dingo/api": "1.0.*@dev",
         "barryvdh/laravel-cors": "^0.7.1",
         "nesbot/carbon": "^1.21",
-        "laravel/socialite": "^2.0"
+        "laravel/socialite": "^2.0",
+        "laravel/cashier": "~6.0",
+        "laravel/cashier-braintree": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
