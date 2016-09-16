@@ -28,7 +28,6 @@ return [
     'signup_fields_rules' => [
     	'email' => 'required|email|unique:users',
     	'password' => 'required|min:12',
-      'is_admin' => 'required|boolean'
     ],
 
     /*
