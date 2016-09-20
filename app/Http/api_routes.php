@@ -14,6 +14,7 @@ $api->version('v1', function ($api) {
 		$api->post('auth/reset', 'App\Api\V1\Controllers\AuthController@reset');
 	});
 
+	
 	// $api->post('protected',['middleware' => ['api.auth'], function(){
 	// 	return \App\Transaction();
 	// }]);

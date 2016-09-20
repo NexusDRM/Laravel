@@ -7,6 +7,7 @@ use JWTAuth;
 use App\Transactions;
 use Dingo\Api\Routing\Helpers;
 
+
 class TransactionController extends Controller {
 	use Helpers;
 

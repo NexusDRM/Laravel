@@ -10,7 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+//
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post(
+  'braintree/webhook',
+  '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+);
+
+// Route::get('user/invoice/{invoice}', function ($invoiceId) {
+//     return Auth::user()->downloadInvoice($invoiceId, [
+//         'vendor'  => 'Your Company',
+//         'product' => 'Your Product',
+//     ]);
+// });
