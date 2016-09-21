@@ -127,10 +127,9 @@ class AuthController extends Controller
 
     public function getToken(Request $request)
     {
-      function () use ($api) {
-  	    $app->response([
+
+  	    return $this->response([
   	        'client_token' => Braintree\ClientToken::generate(),
   	    ]);
-  	  };
     }
 }
