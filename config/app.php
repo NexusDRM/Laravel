@@ -155,13 +155,14 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\CashierServiceProvider::class,
 
         /*
          * Third Party Providers...
          */
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
-        Barryvdh\Cors\ServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class
     ],
 
     /*

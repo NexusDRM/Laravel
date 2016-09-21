@@ -12,12 +12,15 @@ $api->version('v1', function ($api) {
 		$api->post('auth/signup', 'App\Api\V1\Controllers\AuthController@signup');
 		$api->post('auth/recovery', 'App\Api\V1\Controllers\AuthController@recovery');
 		$api->post('auth/reset', 'App\Api\V1\Controllers\AuthController@reset');
+		$api->get('auth/getToken', 'App\api\V1\Controllers\AuthController@getToken');
 	});
 
-	
+
 	// $api->post('protected',['middleware' => ['api.auth'], function(){
 	// 	return \App\Transaction();
 	// }]);
+
+
 
 	// example of protected route
 	// $api->get('protected', ['middleware' => ['api.auth'], function () {

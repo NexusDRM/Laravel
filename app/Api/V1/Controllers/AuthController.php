@@ -124,4 +124,13 @@ class AuthController extends Controller
                 return $this->response->error('could_not_reset_password', 500);
         }
     }
+
+    public function getToken(Request $request)
+    {
+      function () use ($api) {
+  	    $app->response([
+  	        'client_token' => Braintree\ClientToken::generate(),
+  	    ]);
+  	  };
+    }
 }
