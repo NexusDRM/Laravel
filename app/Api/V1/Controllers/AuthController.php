@@ -125,16 +125,4 @@ class AuthController extends Controller
         }
     }
 
-    // public function createToken()
-    // {
-    //   $clientToken = \Braintree\ClientToken::generate();
-    //   return $clientToken;
-    // }
-
-    // public function getToken(Request $request)
-    // {
-    //   $clientToken = Braintree_ClientToken::generate();
-    //
-    //   return $this->response->$clientToken();
-    // }
 }

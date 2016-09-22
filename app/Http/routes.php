@@ -29,6 +29,11 @@ Route::post(
   'getUser',
   '\App\Http\Controllers\UserController@getUser'
 );
+
+Route::post(
+  'processPayment',
+  '\App\Http\Controllers\TransactionsController@process'
+);
 // Route::get('user/invoice/{invoice}', function ($invoiceId) {
 //     return Auth::user()->downloadInvoice($invoiceId, [
 //         'vendor'  => 'Your Company',

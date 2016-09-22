@@ -26,7 +26,9 @@ class TransactionsController extends Controller
     return response()->json([
       'clientToken'=>$clientToken
     ]);
-  //  return response()->json(compact('client_token', $clientToken));
-    // return $this->response->$clientToken();
+  }
+  public function process(Request $request)
+  {
+    //
   }
 }
