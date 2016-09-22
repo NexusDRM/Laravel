@@ -13,13 +13,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Password;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Dingo\Api\Exception\ValidationHttpException;
-use Laravel\Cashier\Billable;
-use App\Providers\CashierServiceProvider as Cashier;
 
 class AuthController extends Controller
 {
     use Helpers;
-    use Billable;
 
     public function login(Request $request)
     {
@@ -128,27 +125,16 @@ class AuthController extends Controller
         }
     }
 
-    public function createToken()
-    {
-      $clientToken = Cashier\ClientToken::generate(array('customerId' => ""));
-      return $clientToken;
-    }
+    // public function createToken()
+    // {
+    //   $clientToken = \Braintree\ClientToken::generate();
+    //   return $clientToken;
+    // }
 
-    public function getToken(Request $request)
-    {
-
-      dd(Cashier::generate());
-
-      // $data = Cashier::generate();
-
-
-      // return response()->json(compact('client_token', $data));
-
-      // return response()->json(compact('client_token'));
-
-  	    // return $this->response([
-  	    //     'client_token' => Braintree\ClientToken::generate(),
-  	    // ]);
-
-    }
+    // public function getToken(Request $request)
+    // {
+    //   $clientToken = Braintree_ClientToken::generate();
+    //
+    //   return $this->response->$clientToken();
+    // }
 }

@@ -14,7 +14,9 @@
         "laravel/socialite": "^2.0",
         "laravel/cashier": "~6.0",
         "laravel/cashier-braintree": "~1.0",
-        "dompdf/dompdf": "~0.5"
+        "dompdf/dompdf": "~0.5",
+        "braintree/braintree_php": "^3.16",
+        "oureastudios/laravel5-braintree": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

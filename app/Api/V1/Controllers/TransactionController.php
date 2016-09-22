@@ -6,6 +6,7 @@ namespace App\Api\V1\Controllers;
 use JWTAuth;
 use App\Transactions;
 use Dingo\Api\Routing\Helpers;
+use App\Providers\CashierServiceProvider as Cashier;
 
 
 class TransactionController extends Controller {
@@ -72,4 +73,26 @@ class TransactionController extends Controller {
 		}
 	}
 
+	// public function createToken()
+	// {
+	// 	$clientToken = Cashier\ClientToken::generate();
+	// 	return $clientToken;
+	// }
+
+	public function getToken(Request $request)
+	{
+		// dd(Cashier::generate());
+
+		// $data = createToken();
+
+
+		//return response()->json(compact('clientToken'));
+
+		// return response()->json(compact('client_token'));
+
+			// return $this->response([
+			//     'client_token' => \Braintree\ClientToken::generate(),
+			// ]);
+
+	}
 }

@@ -20,6 +20,10 @@ Route::post(
   '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
 );
 
+Route::post(
+  'getToken',
+  '\App\Http\Controllers\TransactionsController@getToken'
+);
 // Route::get('user/invoice/{invoice}', function ($invoiceId) {
 //     return Auth::user()->downloadInvoice($invoiceId, [
 //         'vendor'  => 'Your Company',
