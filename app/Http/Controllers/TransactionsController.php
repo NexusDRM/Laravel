@@ -23,7 +23,10 @@ class TransactionsController extends Controller
   public function getToken(Request $request)
   {
     $clientToken = Braintree_ClientToken::generate();
-    return response()->json(compact('client_token', $clientToken));
+    return response()->json([
+      'clientToken'=>$clientToken
+    ]);
+  //  return response()->json(compact('client_token', $clientToken));
     // return $this->response->$clientToken();
   }
 }
