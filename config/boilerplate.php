@@ -16,6 +16,11 @@ return [
         'email', 'password', 'is_admin', 'title', 'firstName', 'lastName', 'suffix', 'streetAddress', 'city', 'state', 'postalCode', 'phone', 'avatar', 'nickname', 'newsletterOptIn'
     ],
 
+    //user update fields
+    'update_fields' => [
+      'title', 'firstName', 'lastName', 'suffix', 'streetAddress', 'city', 'state', 'postalCode', 'phone', 'avatar', 'nickname', 'newsletterOptIn'
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Signup Fields Rules
@@ -28,6 +33,10 @@ return [
     'signup_fields_rules' => [
     	'email' => 'required|email|unique:users',
     	'password' => 'required|min:12',
+    ],
+
+    'update_fields_rules' => [
+
     ],
 
     /*

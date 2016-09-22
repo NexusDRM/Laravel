@@ -34,6 +34,21 @@ Route::post(
   'processPayment',
   '\App\Http\Controllers\TransactionsController@process'
 );
+
+Route::post(
+  'login',
+  '\App\Http\Controllers\AuthController@login'
+);
+
+Route::post(
+  'signup',
+  '\App\Http\Controllers\AuthController@signup'
+);
+
+Route::put(
+  'updateUser',
+  '\App\Http\Controllers\AuthController@updateUser'
+);
 // Route::get('user/invoice/{invoice}', function ($invoiceId) {
 //     return Auth::user()->downloadInvoice($invoiceId, [
 //         'vendor'  => 'Your Company',

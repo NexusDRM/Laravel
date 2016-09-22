@@ -32,6 +32,6 @@ class Subscriptions extends Migration
      */
     public function down()
     {
-        //
+      Schema::drop('subscriptions');
     }
 }
