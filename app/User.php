@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
+
 use Laravel\Cashier\Billable;
 
 
@@ -43,4 +45,5 @@ class User extends Authenticatable
     public function transactions(){
       return $this.hasMany(App\Transactions);
     }
+
 }

@@ -24,6 +24,15 @@ class UserController extends Controller
     ]);
   }
 
-  
+  public function getAllUsers(Request $request)
+  {
+    $users = DB::table('users')->distinct()->get();
+
+    return response()->json([
+      'users'=>$users
+    ]);
+  }
+
+
 
 }
