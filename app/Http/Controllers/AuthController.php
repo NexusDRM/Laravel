@@ -134,7 +134,6 @@ class AuthController extends Controller
 
     public function updateUser(Request $request)
     {
-      // dd($request);
       $user = User::where('id', $request->id)->update([
         'email' => $request->email,
         'title' => $request->title,
@@ -145,9 +144,8 @@ class AuthController extends Controller
         'city' => $request->city,
         'state' => $request->state,
         'postalCode' => $request->postalCode,
+        'phone' => $request->phone,
+        'newsletterOptIn' => $request->newsletterOptIn,
       ]);
-      // return response()->json([
-      //   'user'=>$user
-      // ]);
     }
 }
