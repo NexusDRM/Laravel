@@ -13,10 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      \Braintree_Configuration::environment('sandbox');
-      \Braintree_Configuration::merchantId('px9s23v4b8qsfbk5');
-      \Braintree_Configuration::publicKey('n7pjtmdmbhyzzrhr');
-      \Braintree_Configuration::privateKey('24f776c2c1cda43bb7bfc91ea03d3f4f');
+      \Braintree_Configuration::environment(env('BRAINTREE_ENV'));
+      \Braintree_Configuration::merchantId(env('BRAINTREE_MERCHANT_ID'));
+      \Braintree_Configuration::publicKey(env('BRAINTREE_PUBLIC_KEY'));
+      \Braintree_Configuration::privateKey(env('BRAINTREE_PRIVATE_KEY'));
     }
 
     /**
