@@ -107,6 +107,7 @@ $RECYCLE.BIN/
 
 
 ### Laravel ###
+vendor/
 node_modules/
 
 Homestead.yaml
