@@ -56,7 +56,8 @@
             "php artisan optimize",
             "php -r \"copy('.env.example', '.env');\"",
             "php artisan key:generate",
-            "php artisan jwt:generate"
+            "php artisan jwt:generate",
+            "php artisan migrate"
         ]
     },
     "config": {
