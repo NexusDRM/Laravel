@@ -84,9 +84,9 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
-            'options'   => array(
-                PDO::ATTR_PERSISTENT => true,
-            ),
+            // 'options'   => array(
+            //     PDO::ATTR_PERSISTENT => true,
+            // ),
         ],
 
     ],
