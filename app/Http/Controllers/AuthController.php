@@ -44,8 +44,11 @@ class AuthController extends Controller
         // dd(3);
           return $this->response->error('could_not_create_token', 500);
       }
-      dd($token);
-      return response()->json(compact('token'));
+
+      // return response()->json(compact('token'));
+      return response()->json([
+        'token'=>$token
+      ]);
 
     }
 
