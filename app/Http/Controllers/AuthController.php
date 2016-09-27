@@ -47,7 +47,7 @@ class AuthController extends Controller
 
       // return response()->json(compact('token'));
       return response()->json([
-        'token'=>$token
+        'token'=>$token->token
       ]);
 
     }
