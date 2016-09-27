@@ -75,10 +75,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host'      => RDS_HOSTNAME,
-            'database'  => RDS_DB_NAME,
-            'username'  => RDS_USERNAME,
-            'password'  => RDS_PASSWORD,
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
