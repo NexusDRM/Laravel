@@ -20,7 +20,7 @@ Route::post(
   '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
 );
 
-Route::post(
+Route::get(
   'getToken',
   '\App\Http\Controllers\TransactionsController@getToken'
 );
