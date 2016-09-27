@@ -76,11 +76,11 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST'),
+            'host' => env('DB_HOST','ncxnuklurisowe'),
             'port' => env('DB_PORT'),
             'database' => env('DB_DATABASE'),
             'username' => env('DB_USERNAME'),
-            'password' => env('DB_PASSWORD'),
+            'password' => env('DB_PASSWORD','xT3sijBgsQDAv7UxyP--vdN9Nq'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
