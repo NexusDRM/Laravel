@@ -50,7 +50,7 @@
             "php -r \"copy('.env.example', '.env');\"",
             "php artisan key:generate",
             "php artisan jwt:generate",
-            "php artisan migrate:refresh"
+            "php artisan migrate"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
