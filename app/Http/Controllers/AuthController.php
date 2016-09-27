@@ -36,8 +36,7 @@ class AuthController extends Controller
       try {
           if (! $token = JWTAuth::attempt($credentials)) {
             // dd(2);
-
-              return $this->response->errorUnauthorized();
+            return $this->response->errorUnauthorized();
           }
       }
       catch (JWTException $e) {
@@ -47,7 +46,7 @@ class AuthController extends Controller
 
       // return response()->json(compact('token'));
       return response()->json([
-        'token'=>$token->token
+        'token'=>$token
       ]);
 
     }
@@ -78,8 +77,9 @@ class AuthController extends Controller
         }
 
         return response()->json([
-          'token'=>$token->token
-        ]);    }
+          'token'=>$token
+        ]);
+    }
 
     public function recovery(Request $request)
     {
