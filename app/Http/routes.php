@@ -50,10 +50,10 @@ Route::put(
   '\App\Http\Controllers\AuthController@updateUser'
 );
 
-Route::post(
-  'getAllUsers',
-  '\App\Http\Controllers\UserController@getAllUsers'
-);
+// Route::post(
+//   'getAllUsers',
+//   '\App\Http\Controllers\UserController@getAllUsers'
+// );
 // Route::get('user/invoice/{invoice}', function ($invoiceId) {
 //     return Auth::user()->downloadInvoice($invoiceId, [
 //         'vendor'  => 'Your Company',
