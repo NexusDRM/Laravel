@@ -29,4 +29,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expects : user_id    
 ***  
 **EXAMPLES**  
-![alt text](/apiDocScreens/getUserScreen.png "/getUser")
+![alt text](/apiDocScreens/getUserScreen.png "/getUser")  
+![alt text](/apiDocScreens/getTokenScreen.png "/getToken")  
+![alt text](/apiDocScreens/loginScreen.png "/login")  
+![alt text](/apiDocScreens/signupScreen.png "/signup")  
+![alt text](/apiDocScreens/processPaymentScreen.png "/processPayment")  
+![alt text](/apiDocScreens/updateUserScreen.png "/updateUser")  
