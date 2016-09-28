@@ -75,9 +75,13 @@ class AuthController extends Controller
         if($hasToReleaseToken) {
             return $this->login($request);
         }
-
-        return $this->response->created();
+        return response()->json([
+          'token'=>$token
+        ]);
+        // return $this->response->created();
     }
+
+
 
     public function recovery(Request $request)
     {
