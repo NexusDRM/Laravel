@@ -76,9 +76,7 @@ class AuthController extends Controller
             return $this->login($request);
         }
 
-        return response()->json([
-          'token'=>$token
-        ]);
+        return $this->response->created();
     }
 
     public function recovery(Request $request)
